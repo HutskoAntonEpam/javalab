@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"by.bsu.tasks","c":"Main","l":"getCntDigits(String)","url":"getCntDigits(java.lang.String)"},{"p":"by.bsu.tasks","c":"Main","l":"Main()","url":"%3Cinit%3E()"},{"p":"by.bsu.tasks","c":"Main","l":"main(String[])","url":"main(java.lang.String[])"},{"p":"by.bsu.tasks","c":"Main","l":"sort(String[], boolean)","url":"sort(java.lang.String[],boolean)"}]
