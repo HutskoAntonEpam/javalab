@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Appenders>
+        <RollingFile name="loghtml" fileName="logs/app-info.html"
+                     filePattern="logs/app-info-%d{dd-MM-yyyy_HH-00}.html">
+            <HTMLLayout charset="UTF-8" title="Log oaoaao" locationInfo="true"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+        </RollingFile>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name= "DiffDigits" level="debug" additivity="true">
+            <!--<AppenderRef ref="Console"/>-->
+            <AppenderRef ref="loghtml"/>
+        </Logger>
+
+        <!-- Root Logger -->
+        <Root level="all">
+            <!--<AppenderRef ref="Console"/>-->
+            <AppenderRef ref="loghtml"/>
+        </Root>
+    </Loggers>
+
+
+</Configuration>
