@@ -3,7 +3,6 @@ package by.bsu.study;
 import org.jetbrains.annotations.NotNull;
 
 public class Point3D {
-    //Easier to use as an open structure
     public Fraction x;
     public Fraction y;
     public Fraction z;
@@ -46,50 +45,10 @@ public class Point3D {
     public static boolean isOnOneLine(@NotNull Point3D pt1, @NotNull Point3D pt2, @NotNull Point3D pt3){
         Fraction zero = (new Fraction()).minus(new Fraction());
         Fraction dx = (pt2.x).minus(pt1.x), dy = (pt2.y).minus(pt1.y), dz = (pt2.z).minus(pt1.z);
-        /*if (dx.isEquals(zero) && dx.isEquals(dy) && dx.isEquals(dz)){
-            return false;
-        }
-        if (dx.isEquals(zero) && dx.isEquals(dy)){
-            if(pt3.x.isEquals(pt1.x) && pt3.y.isEquals(pt1.y)){
-                return true;
-            }
-            return false;
-        }
-        if (dx.isEquals(zero) && dx.isEquals(dz)){
-            if(pt3.x.isEquals(pt1.x) && pt3.z.isEquals(pt1.z)){
-                return true;
-            }
-            return false;
-        }
-        if (dy.isEquals(zero) && dx.isEquals(dz)){
-            if(pt3.y.isEquals(pt1.y) && pt3.z.isEquals(pt1.z)){
-                return true;
-            }
-            return false;
-        }*/
 
-        Fraction num1 = ((pt3.x).minus(pt1.x)).divideBy((pt2.x).minus(pt1.x)); //(x - x1)/(x2 - x1)
-        Fraction num2 = ((pt3.y).minus(pt1.y)).divideBy((pt2.y).minus(pt1.y)); //(y - y1)/(y2 - y1)
-        Fraction num3 = ((pt3.z).minus(pt1.z)).divideBy((pt2.z).minus(pt1.z)); //(z - z1)/(z2 - z1)
-        // (x - x1)/(x2 - x1) == (y - y1)/(y2 - y1) == (z - z1)/(z2 - z1) --- canonical equation of line
-        /*if (dx.isEquals(zero)){
-            if(num2.isEquals(num3)){
-                return true;
-            }
-            return false;
-        }
-        if (dy.isEquals(zero)){
-            if(num1.isEquals(num3)){
-                return true;
-            }
-            return false;
-        }
-        if (dz.isEquals(zero)){
-            if(num1.isEquals(num2)){
-                return true;
-            }
-            return false;
-        }*/
+        Fraction num1 = ((pt3.x).minus(pt1.x)).divideBy((pt2.x).minus(pt1.x));
+        Fraction num2 = ((pt3.y).minus(pt1.y)).divideBy((pt2.y).minus(pt1.y));
+        Fraction num3 = ((pt3.z).minus(pt1.z)).divideBy((pt2.z).minus(pt1.z));
         if (num1.isEquals(num2) && num1.isEquals(num3)){
             return true;
         }

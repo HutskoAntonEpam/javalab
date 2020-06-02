@@ -1,5 +1,11 @@
 package by.study.bsu.phones;
-
+/*Phone: id, Фамилия, Имя, Отчество, Адрес, Номер кредитной карточки,
+Дебет, Кредит, Время городских и междугородных разговоров.
+Создать массив объектов. Вывести:
+a) сведения об абонентах, у которых время внутригородских разговоров
+превышает заданное;
+b) сведения об абонентах, которые пользовались междугородной связью;
+c) сведения об абонентах в алфавитном порядке.*/
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -8,19 +14,19 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class PhoneMain {
-    public static Logger log = LogManager.getLogger(PhoneMain.class.getName());//log4j2
+    public static Logger log = LogManager.getLogger(PhoneMain.class.getName());
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         int number;
         System.out.print("Enter number of subs to generate.\n>> ");
-        while (!sc.hasNextInt() || (number = sc.nextInt()) <= 0){ //check for proper input
+        while (!sc.hasNextInt() || (number = sc.nextInt()) <= 0){
             wrongInput(sc);
             System.out.print(">> ");
         }
-        Phone[] subs = generateSubs(number);//generate random sets of letters
-        sortSubs(subs);//sort in alphabet order
-        menu(subs);//call of menu
+        Phone[] subs = generateSubs(number);
+        sortSubs(subs);
+        menu(subs);
     }
 
     public static void menu(Phone[] subs) {

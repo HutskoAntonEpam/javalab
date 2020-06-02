@@ -9,8 +9,10 @@ import org.apache.logging.log4j.Logger;
 import java.io.IOException;
 import java.util.ArrayList;
 
-/*В каждом слове сонета Вильяма Шекспира заменить первую букву слова
-на прописную.*/
+/*Во входном файле хранятся две разреженные матрицы — А и В. Построить
+циклически связанные списки СА и СВ, содержащие ненулевые элементы
+соответственно матриц А и В. Просматривая списки, вычислить: а) сумму
+S = A + B; б) произведение P = A × B.*/
 public class ConsoleMenu {
     private static final Logger log = LogManager.getLogger(ConsoleMenu.class.getSimpleName());
 

@@ -15,7 +15,6 @@ class Phone {
     private double townCallsTime;
     private double distanceCallsTime;
 
-    //constructors
     Phone(){
         townCallsTime = 0;
         distanceCallsTime = 0;
@@ -33,7 +32,6 @@ class Phone {
         cardID = cardIDN;
     }
 
-    //getters
     int getId(){
         return id;
     }
@@ -65,7 +63,6 @@ class Phone {
         return distanceCallsTime;
     }
 
-    //setters
     void setId(int idN){
         id = idN;
     }
@@ -86,7 +83,7 @@ class Phone {
     }
     void setDebit(BigDecimal debitN){
         debit = new BigDecimal(debitN.toString());//для полной точности
-    } //new object with same value
+    }
     void setCredit(BigDecimal creditN){
         credit = new BigDecimal(creditN.toString());
     }

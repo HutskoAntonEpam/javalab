@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+/*Наибольший общий делитель и наименьшее общее кратное этих чисел.*/
 public class lab1_GCD_LCM {
     public static void main(String[] args) {
         //read from console

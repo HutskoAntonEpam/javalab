@@ -2,7 +2,6 @@ package motorcyclist.domain.entity.ammunition;
 
 import java.io.Serializable;
 
-//structure of every ammunition
 public class Ammunition implements Serializable {
     public String name;
     public AmmunitionType type;

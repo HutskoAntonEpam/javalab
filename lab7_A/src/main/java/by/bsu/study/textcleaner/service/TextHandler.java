@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class TextHandler {
     private static Logger log = LogManager.getLogger(TextHandler.class.getName());
 
-    /*7. Из текста удалить все символы, кроме пробелов, не являющиеся буквами. Между
+    /* Из текста удалить все символы, кроме пробелов, не являющиеся буквами. Между
     последовательностями подряд идущих букв оставить хотя бы один пробел.*/
     public String clean(String str){
         return str.trim() //убираем пробельные символы из начала и конца строки
@@ -17,7 +17,7 @@ public class TextHandler {
                 .replaceAll("[\\s]{2,}", " "); //заменяем любые два пробела и больше на один
     }
 
-    /*7. Рассортировать слова текста по возрастанию доли гласных букв
+    /* Рассортировать слова текста по возрастанию доли гласных букв
     (отношение количества гласных к общему количеству букв в слове).*/
     public String sortByVowels(String str){
         StringBuilder sorted = new StringBuilder();

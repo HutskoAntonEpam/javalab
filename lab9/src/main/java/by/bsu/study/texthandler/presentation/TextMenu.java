@@ -9,7 +9,9 @@ import java.io.File;
 import java.io.IOException;
 
 /*В каждом слове сонета Вильяма Шекспира заменить первую букву слова
-на прописную.*/
+на прописную. Из файла удалить все слова, содержащие от трех до пяти символов, но при
+этом из каждой строки должно быть удалено только максимальное четное
+количество таких слов.*/
 public class TextMenu {
     private static final Logger log = LogManager.getLogger(TextMenu.class.getSimpleName());
 

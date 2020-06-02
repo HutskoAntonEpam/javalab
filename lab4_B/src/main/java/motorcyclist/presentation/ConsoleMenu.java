@@ -1,5 +1,7 @@
 package motorcyclist.presentation;
-
+/*Мотоциклист. Определить иерархию амуниции. Экипировать мотоциклиста. Подсчитать стоимость.
+Провести сортировку амуниции на основе веса.
+Найти элементы амуниции, соответствующие заданному диапазону параметров цены.*/
 import motorcyclist.service.MotorcyclistService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

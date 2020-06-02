@@ -9,14 +9,14 @@ import java.util.Scanner;
 
 /**
  * The second lab class
- * @author Timofey Ivanov
+ * @author Anton Hutsko
  * @version 1.0*/
-public class DIffDigits {
+public class DiffDigits {
     /**log4j logger*/
     public static Logger log = LogManager.getLogger();
     /**Start function
      * @param args - console arguments(no use)*/
-    
+
     public static void main(String[] args) {
         log.info("Program started");
 
@@ -26,7 +26,7 @@ public class DIffDigits {
         labSecondPart();
         System.out.println("-----------\n");
 
-        System.out.println("Author: Timofey Ivanov;");
+        System.out.println("Author: Anton Hutsko;");
         SimpleDateFormat date = new SimpleDateFormat("dd MMMM yyyy 'at' HH:mm:ss", Locale.ENGLISH);
         System.out.println("Task receiving time is: " + date.format(new Date(1581750630000L)));
         System.out.println("Task showing time(current) is: " + date.format(new Date()));

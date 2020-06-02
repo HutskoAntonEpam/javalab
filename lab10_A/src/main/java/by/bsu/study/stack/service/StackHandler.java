@@ -1,4 +1,4 @@
-package by.bsu.study.shakespeare.service;
+package by.bsu.study.stack.service;
 
 import java.io.FileOutputStream;
 import java.io.FileReader;

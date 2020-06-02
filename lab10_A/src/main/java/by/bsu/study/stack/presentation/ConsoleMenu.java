@@ -1,13 +1,12 @@
-package by.bsu.study.shakespeare.presentation;
+package by.bsu.study.stack.presentation;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import by.bsu.study.shakespeare.service.StackHandler;
+import by.bsu.study.stack.service.StackHandler;
 import java.io.IOException;
 import java.util.Stack;
 
-/*В каждом слове сонета Вильяма Шекспира заменить первую букву слова
-на прописную.*/
+/*Задать два стека, поменять информацию местами.*/
 public class ConsoleMenu {
     private static final Logger log = LogManager.getLogger(ConsoleMenu.class.getSimpleName());
 

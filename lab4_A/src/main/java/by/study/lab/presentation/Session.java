@@ -1,5 +1,7 @@
 package by.study.lab.presentation;
-
+/*Создать объект класса Компьютер, используя классы Винчестер,
+Дисковод, Оперативная память, Процессор. Методы: включить, выключить, проверить на вирусы,
+вывести на консоль размер винчестера.*/
 import by.study.lab.computer.Computer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
