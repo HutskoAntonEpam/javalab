@@ -1,6 +1,9 @@
 package by.bsu.study.trains.presentation;
-
-
+/*Тоннель. В горах существует два железнодорожных тоннеля, по которым
+поезда могут двигаться в обоих направлениях. По обоим концам тоннеля
+собралось много поездов. Обеспечить безопасное прохождение тоннелей
+в обоих направлениях. Поезд можно перенаправить из одного тоннеля
+в другой при превышении заданного времени ожидания на проезд*/
 import by.bsu.study.trains.domain.Train;
 import by.bsu.study.trains.service.TunnelTransfer;
 import org.apache.logging.log4j.LogManager;
